@@ -512,7 +512,7 @@
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ri-tR-UGg">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ri-tR-UGg">
                                                             <rect key="frame" x="0.0" y="27.5" width="280" height="52"/>
                                                             <color key="tintColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
@@ -603,20 +603,6 @@
                                     <constraint firstItem="RYR-wA-78r" firstAttribute="centerY" secondItem="pkl-eU-vPs" secondAttribute="centerY" id="hI8-vT-b2q"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al7-N0-lCu">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Cjn-cy-Kcd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
-                                <state key="normal" title=" SEND" image="send">
-                                    <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="sendBtnWasPressed:" destination="9f7-Tm-Lce" eventType="touchUpInside" id="NeY-de-YFf"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="DyS-Ad-U4P">
                                 <rect key="frame" x="20" y="90" width="60" height="60"/>
                                 <constraints>
@@ -641,24 +627,38 @@
                                 <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al7-N0-lCu">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cjn-cy-Kcd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <state key="normal" title=" SEND" image="send">
+                                    <color key="titleColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBtnWasPressed:" destination="9f7-Tm-Lce" eventType="touchUpInside" id="NeY-de-YFf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Oh1-8w-UqA" firstAttribute="leading" secondItem="NL1-OX-Qbg" secondAttribute="leading" constant="16" id="8bI-2O-xiu"/>
+                            <constraint firstItem="al7-N0-lCu" firstAttribute="leading" secondItem="NL1-OX-Qbg" secondAttribute="leading" id="8fK-In-a3b"/>
                             <constraint firstItem="NL1-OX-Qbg" firstAttribute="trailing" secondItem="G0B-Z4-Eo8" secondAttribute="trailing" constant="16" id="Cee-7W-7AK"/>
                             <constraint firstItem="DyS-Ad-U4P" firstAttribute="top" secondItem="YoH-ym-vVV" secondAttribute="bottom" constant="20" id="GA5-wh-Cxb"/>
                             <constraint firstItem="YoH-ym-vVV" firstAttribute="trailing" secondItem="NL1-OX-Qbg" secondAttribute="trailing" id="GnR-U8-JwO"/>
-                            <constraint firstItem="al7-N0-lCu" firstAttribute="bottom" secondItem="NL1-OX-Qbg" secondAttribute="bottom" id="JaW-cU-JpM"/>
                             <constraint firstItem="YoH-ym-vVV" firstAttribute="top" secondItem="rw5-KS-HQY" secondAttribute="top" id="Kjn-gf-Six"/>
-                            <constraint firstItem="al7-N0-lCu" firstAttribute="top" secondItem="Oh1-8w-UqA" secondAttribute="bottom" constant="20" id="PgG-hY-iV1"/>
                             <constraint firstItem="DyS-Ad-U4P" firstAttribute="leading" secondItem="NL1-OX-Qbg" secondAttribute="leading" constant="20" id="QYS-CT-MHO"/>
-                            <constraint firstItem="al7-N0-lCu" firstAttribute="trailing" secondItem="NL1-OX-Qbg" secondAttribute="trailing" id="aFy-ob-jnO"/>
+                            <constraint firstItem="al7-N0-lCu" firstAttribute="bottom" secondItem="NL1-OX-Qbg" secondAttribute="bottom" id="aAF-81-tg5"/>
                             <constraint firstItem="Oh1-8w-UqA" firstAttribute="top" secondItem="DyS-Ad-U4P" secondAttribute="bottom" constant="20" id="auu-UE-Gkb"/>
                             <constraint firstItem="G0B-Z4-Eo8" firstAttribute="leading" secondItem="DyS-Ad-U4P" secondAttribute="trailing" constant="20" id="eQF-9G-KZR"/>
                             <constraint firstItem="YoH-ym-vVV" firstAttribute="leading" secondItem="NL1-OX-Qbg" secondAttribute="leading" id="fgG-dr-EDV"/>
-                            <constraint firstItem="al7-N0-lCu" firstAttribute="leading" secondItem="NL1-OX-Qbg" secondAttribute="leading" id="i6D-mf-jVo"/>
                             <constraint firstItem="NL1-OX-Qbg" firstAttribute="trailing" secondItem="Oh1-8w-UqA" secondAttribute="trailing" constant="16" id="mpq-4t-Qag"/>
                             <constraint firstItem="DyS-Ad-U4P" firstAttribute="centerY" secondItem="G0B-Z4-Eo8" secondAttribute="centerY" id="pgQ-13-9iX"/>
+                            <constraint firstItem="al7-N0-lCu" firstAttribute="trailing" secondItem="NL1-OX-Qbg" secondAttribute="trailing" id="qW2-SJ-oEH"/>
+                            <constraint firstItem="al7-N0-lCu" firstAttribute="top" secondItem="Oh1-8w-UqA" secondAttribute="bottom" constant="20" id="vp3-kn-Rf5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NL1-OX-Qbg"/>
                     </view>

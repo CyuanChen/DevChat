@@ -17,6 +17,8 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -33,6 +35,7 @@ class FeedViewController: UIViewController {
 }
 
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
