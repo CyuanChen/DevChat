@@ -20,8 +20,11 @@ extension UIView {
         let endingFrame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let deltaY = endingFrame.origin.y - startingFrame.origin.y
         
+        
         UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: UIViewKeyframeAnimationOptions(rawValue: curve), animations: {
+            print("keyboard move \(deltaY)")
             self.frame.origin.y += deltaY
+            print(self.frame.origin.y)
         }, completion: nil)
     }
 }
