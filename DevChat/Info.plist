@@ -24,6 +24,27 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.799408459524-585mbk60k6kklb1tp2ghpfmgup2rm4cd</string>
+				<string>fb145353919501681</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>145353919501681</string>
+	<key>FacebookDisplayName</key>
+	<string>DevChat</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
